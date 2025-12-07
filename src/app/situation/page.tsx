@@ -85,15 +85,17 @@ export default function SituationPage() {
                                 </Button>
                             </div>
                             <div className="md:col-span-2 min-h-[400px] bg-gray-200 relative">
-                                {/* Map Placeholder / Parking View */}
-                                <img
-                                    src="/images/parking-courtyard.jpg"
-                                    alt="Vue du Parking et de la Cour"
-                                    className="w-full h-full object-cover"
-                                />
-                                <div className="absolute bottom-4 right-4">
-                                    <span className="bg-white/90 px-3 py-1 rounded shadow text-sm font-semibold text-violet-deep">Parking Privé Sécurisé</span>
-                                </div>
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    className="w-full h-full min-h-[400px]"
+                                    frameBorder="0"
+                                    title="Carte Résidence Les Violettes"
+                                    scrolling="no"
+                                    marginHeight={0}
+                                    marginWidth={0}
+                                    src="https://maps.google.com/maps?q=64%20Impasse%20de%20la%20Glaci%C3%A8re%2C%2031200%20Toulouse&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                ></iframe>
                             </div>
                         </div>
                     </div>
